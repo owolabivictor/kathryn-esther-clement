@@ -11,14 +11,17 @@ window.addEventListener("scroll", function () {
 
 // Navigation animate on scroll
 const nav = document.querySelector("nav");
+const body = document.querySelector("body")
 
 window.addEventListener("scroll", function () {
 
     if (window.scrollY > nav.offsetHeight){
         nav.classList.add("sticky")
+        body.style.paddingTop = nav.offsetHeight + "px"
     }
     else {
         nav.classList.remove("sticky")
+        body.style.paddingTop = 0
     }
 
 })
