@@ -5,6 +5,13 @@
     font-family: "Poppins", sans-serif;
 }
 
+.overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 .background-video {
     position: fixed;
     top: 0;
@@ -37,10 +44,9 @@ nav.sticky {
 }
 
 
-nav.sticky .logo, nav.sticky .nav-links{
+nav.sticky .logo, nav.sticky .nav-links, nav.sticky .fa-bars{
     color: white;
 }
-
 
 .nav-bar {
     display: flex;
@@ -68,6 +74,17 @@ nav.sticky .logo, nav.sticky .nav-links{
 
 .nav-links:hover {
     color: #2563EB;
+}
+
+.fa-bars,
+.fa-xmark {
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+.fa-solid.fa-bars, .fa-solid.fa-xmark {
+    display: none;
 }
 
 .hero {
@@ -163,15 +180,8 @@ nav.sticky .logo, nav.sticky .nav-links{
 
 .about-text {
     flex: 1;
-    transform: translateY(90px);
-    opacity: 0;
-    transition: all 1.5s;
 }
 
-.about-text.show {
-    transform: translateY(0);
-    opacity: 1;
-}
 
 .about h3 {
     color: #2563EB;
@@ -180,8 +190,16 @@ nav.sticky .logo, nav.sticky .nav-links{
     margin-bottom: 10px;
 }
 
-.about p {
+.about-paragraph {
     line-height: 40px;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all 1.3s;
+}
+
+.about-paragraph.show {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .about img {
@@ -201,6 +219,36 @@ nav.sticky .logo, nav.sticky .nav-links{
     }
 }
 
+@media (max-width: 856px){
+    .fa-solid.fa-bars, .fa-solid.fa-xmark {
+        display: block;
+    }
+
+    .nav-lists {
+        position: fixed;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        z-index: 999;
+        color: white;
+        padding: 15px;
+        display: none;
+        gap: 10px;
+    }
+    
+    .nav-lists.show {
+        display: flex;
+    }
+
+    .nav-links {
+        color: white;
+        border-bottom: 1px solid white;
+        text-decoration: none;
+    }
+}
+
 
 @media (max-width: 798px){
     p, a{
@@ -216,7 +264,7 @@ nav.sticky .logo, nav.sticky .nav-links{
     }
 
     /* About Section */
-    .about p {
+    .about-paragraph {
         line-height: 35px;
     }
 }

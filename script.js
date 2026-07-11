@@ -1,14 +1,3 @@
-// About section reveal on scroll
-const aboutText = document.querySelector(".about-text");
-
-window.addEventListener("scroll", function () {
-    const position = aboutText.getBoundingClientRect();
-
-    if (position.top < window.innerHeight * 0.7) {
-        aboutText.classList.add("show");
-    }
-});
-
 // Navigation animate on scroll
 const nav = document.querySelector("nav");
 const body = document.querySelector("body")
@@ -25,4 +14,38 @@ window.addEventListener("scroll", function () {
     }
 
 })
+
+// Hamburger menu
+const hamburger = document.querySelector(".fa-bars")
+const closeBtn = document.querySelector(".fa-xmark")
+const navLists = document.querySelector(".nav-lists")
+const overlay = document.querySelector(".overlay")
+
+hamburger.addEventListener("click", function () {
+    navLists.classList.add("show")
+    navLists.style.top = nav.offsetHeight + "px"
+    overlay.style.display = "block"
+})
+
+closeBtn.addEventListener("click", function (){
+    navLists.classList.remove("show")
+    overlay.style.display = "none"
+})
+
+overlay.addEventListener("click", function (){
+    navLists.classList.remove("show")
+    overlay.style.display = "none"
+})
+
+// About section reveal on scroll
+const aboutParagraph = document.querySelector(".about-paragraph");
+
+window.addEventListener("scroll", function () {
+    const position = aboutParagraph.getBoundingClientRect();
+
+    if (position.top < window.innerHeight * 0.85) {
+        aboutParagraph.classList.add("show");
+    }
+});
+
 
