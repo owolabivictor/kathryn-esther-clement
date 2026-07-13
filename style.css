@@ -89,7 +89,6 @@ nav.sticky .logo, nav.sticky .nav-links, nav.sticky .fa-bars{
 
 .hero {
     color: white;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

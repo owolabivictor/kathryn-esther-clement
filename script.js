@@ -12,7 +12,6 @@ window.addEventListener("scroll", function () {
         nav.classList.remove("sticky")
         body.style.paddingTop = 0
     }
-
 })
 
 // Hamburger menu
@@ -36,6 +35,10 @@ overlay.addEventListener("click", function (){
     navLists.classList.remove("show")
     overlay.style.display = "none"
 })
+
+// Calculate the hero height
+const hero = document.querySelector(".hero")
+hero.style.height = `${window.innerHeight - nav.offsetHeight}px` 
 
 // About section reveal on scroll
 const aboutParagraph = document.querySelector(".about-paragraph");
