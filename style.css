@@ -5,6 +5,13 @@
     font-family: "Poppins", sans-serif;
 }
 
+h3 {
+    color: #2563EB;
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 .overlay {
     position: fixed;
     inset: 0;
@@ -159,6 +166,36 @@ nav.sticky .logo, nav.sticky .nav-links, nav.sticky .fa-bars{
     margin-right: 10px;
 }
 
+/* Featured Videos Section */
+.featured-video-section {
+    background-color: #ffffff;
+    padding: 100px 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-video-container {
+    width: 86%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 40px;
+}
+
+.featured-section-header {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 16/9; /* for every 16 units width, add 9 units height */
+    border: none;
+    border-radius: 10px;
+}
+
+/* About Section */
 .about {
     font-size: 18px;
     background-color: #ffffff;
@@ -181,14 +218,6 @@ nav.sticky .logo, nav.sticky .nav-links, nav.sticky .fa-bars{
     flex: 1;
 }
 
-
-.about h3 {
-    color: #2563EB;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
 .about-paragraph {
     line-height: 40px;
     transform: translateY(40px);
@@ -203,7 +232,7 @@ nav.sticky .logo, nav.sticky .nav-links, nav.sticky .fa-bars{
 
 .about img {
     flex: 1;
-    max-width: 600px;
+    max-width: 500px;
 }
 
 @media (max-width: 1135px){
