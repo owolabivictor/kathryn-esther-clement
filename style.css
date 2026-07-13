@@ -50,7 +50,6 @@ nav.sticky {
     background-color: #2563EB;
 }
 
-
 nav.sticky .logo, nav.sticky .nav-links, nav.sticky .fa-bars{
     color: white;
 }
@@ -268,7 +267,6 @@ iframe {
         text-decoration: none;
     }
 }
-
 
 @media (max-width: 798px){
     p, a{

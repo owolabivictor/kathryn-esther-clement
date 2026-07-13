@@ -41,7 +41,7 @@ const hero = document.querySelector(".hero")
 hero.style.height = `${window.innerHeight - nav.offsetHeight}px` 
 
 // General reveal on scroll page animations
-const revealElements = document.querySelector(".reveal");
+const revealElements = document.querySelectorAll(".reveal");
 
 window.addEventListener("scroll", function () {
     revealElements.forEach(function(element) {
