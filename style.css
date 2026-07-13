@@ -64,6 +64,7 @@ nav.sticky .logo, nav.sticky .nav-links, nav.sticky .fa-bars{
 .logo{
     cursor: pointer;
     color: #2563EB;
+    margin-bottom: 0;
 }
 
 .nav-lists {
@@ -271,6 +272,10 @@ iframe {
 @media (max-width: 798px){
     p, a{
         font-size: 16px;
+    }
+
+    .logo {
+        font-size: 20px;
     }
 
     .hero h1 {
