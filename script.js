@@ -36,19 +36,19 @@ overlay.addEventListener("click", function (){
     overlay.style.display = "none"
 })
 
-// Calculate the hero height
+// Calculate and assign the hero height
 const hero = document.querySelector(".hero")
 hero.style.height = `${window.innerHeight - nav.offsetHeight}px` 
 
-// About section reveal on scroll
-const aboutParagraph = document.querySelector(".about-paragraph");
+// General reveal on scroll page animations
+const revealElements = document.querySelector(".reveal");
 
 window.addEventListener("scroll", function () {
-    const position = aboutParagraph.getBoundingClientRect();
+    revealElements.forEach(function(element) {
+        const position = element.getBoundingClientRect();
 
-    if (position.top < window.innerHeight * 0.85) {
-        aboutParagraph.classList.add("show");
-    }
+        if (position.top < window.innerHeight * 0.8) {
+            element.classList.add("show");
+        }
+    });
 });
-
-

@@ -169,7 +169,7 @@ nav.sticky .logo, nav.sticky .nav-links, nav.sticky .fa-bars{
 /* Featured Videos Section */
 .featured-video-section {
     background-color: #ffffff;
-    padding: 100px 0 50px;
+    padding: 70px 0 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -220,14 +220,6 @@ iframe {
 
 .about-paragraph {
     line-height: 40px;
-    transform: translateY(40px);
-    opacity: 0;
-    transition: all 1.3s;
-}
-
-.about-paragraph.show {
-    transform: translateY(0);
-    opacity: 1;
 }
 
 .about img {
@@ -322,4 +314,16 @@ iframe {
         width: 80%;
         min-width: 200px;
     }
+}
+
+/* CSS CLASS FOR REVEAL ON SCROLL */
+.reveal {
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all 1.3s;
+}
+
+.reveal.show {
+    transform: translateY(0);
+    opacity: 1;
 }
