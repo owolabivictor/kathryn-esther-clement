@@ -200,7 +200,7 @@ iframe {
     font-size: 18px;
     background-color: #f8fafc;
     display: flex;
-    padding: 50px 0;
+    padding: 50px 0 20px;
     align-items: center;
 }
 
@@ -225,6 +225,37 @@ iframe {
 .about img {
     flex: 1;
     max-width: 500px;
+}
+
+/* featured at section */
+.featured-at {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px 0 40px;
+}
+
+.featured-at h3 {
+    margin-bottom: 0;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    width: 80%;
+    max-width: 700px;
+}
+
+.image-container img {
+    width: 100%;
+    transition: all 1s;
+}
+
+.image-container img:hover {
+    scale: 0.9;
 }
 
 @media (max-width: 1135px){
@@ -316,6 +347,11 @@ iframe {
     .about img {
         width: 80%;
         min-width: 200px;
+    }
+
+    /* featured section */
+    .soj {
+        margin-bottom: 20px;
     }
 }
 
