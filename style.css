@@ -277,8 +277,8 @@ iframe {
 .home-page-book {
     flex: 1;
     max-width: 300px;
-    min-width: 280px;
-    filter: drop-shadow(5px 5px 10px #bea61e);
+    min-width: 250px;
+    filter: drop-shadow(5px 5px 10px #222222);
     opacity: 0;
     transform: translateX(-70px);
     transition: all 1.3s;
@@ -291,7 +291,7 @@ iframe {
 
 .featured-book-text {
     flex: 1;
-    min-width: 400px;
+    max-width: 400px;
 }
 
 @media (max-width: 1135px){
