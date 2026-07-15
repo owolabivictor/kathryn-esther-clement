@@ -5,6 +5,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    background-color: #0f172a;
+}
+
 h3 {
     color: #2563EB;
     font-size: 23px;
