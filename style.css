@@ -271,7 +271,6 @@ iframe {
 .featured-book-container {
     display: flex;
     width: 86%;
-    flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: center;
     max-width: 1000px;
@@ -295,7 +294,7 @@ iframe {
 
 .featured-book-text {
     flex: 1;
-    max-width: 400px;
+    max-width: 550px;
 }
 
 @media (max-width: 1135px){
@@ -360,6 +359,15 @@ iframe {
     /* About Section */
     .about-paragraph {
         line-height: 35px;
+    }
+
+    /* Featured book section*/
+    .featured-book-container {
+        flex-direction: column-reverse;
+    }
+
+    .featured-book-text {
+        max-width: 798px;
     }
 }
 
