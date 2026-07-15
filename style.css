@@ -258,6 +258,11 @@ iframe {
     scale: 0.9;
 }
 
+/* featured book section*/
+.featured-book {
+    background-color: #f8fafc;
+}
+
 @media (max-width: 1135px){
     .about-container {
         flex-direction: column-reverse;

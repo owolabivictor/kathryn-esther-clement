@@ -1,5 +1,5 @@
 // Navigation animate on scroll
-const nav = document.querySelector("nav");
+const nav = document.querySelector("nav")
 const body = document.querySelector("body")
 
 window.addEventListener("scroll", function () {
