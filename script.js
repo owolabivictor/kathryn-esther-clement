@@ -38,10 +38,12 @@ overlay.addEventListener("click", function (){
 
 // Calculate and assign the hero height
 const hero = document.querySelector(".hero")
-hero.style.height = `${window.innerHeight - nav.offsetHeight}px` 
+hero.style.height = `${window.innerHeight - nav.offsetHeight}px`
+
 
 // General reveal on scroll page animations
 const revealElements = document.querySelectorAll(".reveal");
+const homePageBook = document.querySelector(".home-page-book")
 
 window.addEventListener("scroll", function () {
     revealElements.forEach(function(element) {
@@ -51,4 +53,9 @@ window.addEventListener("scroll", function () {
             element.classList.add("show");
         }
     });
+
+    const position = homePageBook.getBoundingClientRect()
+    if (position.top < window.innerHeight * 0.8){
+        homePageBook.classList.add("slide-in-left")
+    }
 });
