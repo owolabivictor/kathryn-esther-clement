@@ -17,7 +17,7 @@ h3 {
 }
 
 p {
-    line-height: 40px;
+    line-height: 1.7;
     font-size: 18px;
 }
 
@@ -417,7 +417,7 @@ footer hr{
 
 @media (max-width: 798px){
     p, a{
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .logo {
