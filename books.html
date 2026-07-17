@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books - Kathryn</title>
+    <title>Book Collection - Kathryn</title>
 
     <!--Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,17 +16,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="books.css">
 </head>
-<body>
+<body id="books-page">
     <nav>
         <div class="nav-bar">
             <h3 class="logo">Kathryn Esther Clement</h3>
             <div class="nav-lists">
-                <i class="fa-solid fa-xmark"></i>
-                <a href="index.html" class="nav-links">Home</a>
-                <a href="about.html" class="nav-links">About</a>
-                <a href="spoken-word.html" class="nav-links">Spoken Word</a>
-                <a href="books.html" class="nav-links">Books</a>
-                <a href="contact.html" class="nav-links">Contact</a>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                <a href="index.html" onclick="closeMenu()" class="nav-links">Home</a>
+                <a href="about.html" onclick="closeMenu()" class="nav-links">About</a>
+                <a href="spoken-word.html" onclick="closeMenu()" class="nav-links">Spoken Word</a>
+                <a href="books.html" onclick="closeMenu()" class="nav-links">Books</a>
+                <a href="contact.html" onclick="closeMenu()" class="nav-links">Contact</a>
             </div>
             <i class="fa-solid fa-bars"></i>
         </div>
@@ -37,43 +37,109 @@
         <div class="book-container">
             <hr>
             <div class="book-item">
-                <img src="media/finding your path cover photo.jpg" alt="" class="book">
+                <div class="book-div">
+                    <img src="media/finding your path cover photo.jpg" alt="" class="book">
+                </div>
                 <div class="book-text">
                     <h4 class="book-title">Finding Your Path</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, corporis voluptatum!</p>
+                    <p class="book-price">&#8358; 3,500</p>
+                    <p class="book-info">Discover your purpose and begin a journey toward a life of clarity and fulfillment.</p>
+                    <a href="https://selar.com/y3v283" target="_blank" class="purchase-btn">Buy Now</a>
                 </div>
             </div>
             <hr>
             <div class="book-item">
                 <div class="book-text">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, eveniet numquam, odio necessitatibus</p>
+                    <h4 class="book-title">You Unfiltered</h4>
+                    <p class="book-price">&#8358; 5,500</p>
+                    <p class="book-info">Embrace your true self, find your voice, and live with fearless authenticity.</p>
+                    <a href="https://selar.com/1x5uul" target="_blank" class="purchase-btn">Buy Now</a>
                 </div>
-                <img src="media/finding your path cover photo.jpg" alt="" class="book">
-            </div>
-            <hr>
-            <div class="book-item">
-                <img src="media/finding your path cover photo.jpg" alt="" class="book">
-                <div class="book-text">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque quo eligendi consectetur sit</p>
+                <div class="book-div">
+                    <img src="media/You unfiltered.jpg" alt="" class="book">
                 </div>
             </div>
             <hr>
             <div class="book-item">
-                <div class="book-text">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam sapiente modi dolorum perferendis exercitationem sed recusandae.</p>
+                <div class="book-div">
+                    <img src="media/Audacity.png" alt="" class="book">
                 </div>
-                <img src="media/finding your path cover photo.jpg" alt="" class="book">
+                <div class="book-text">
+                    <h4 class="book-title">Audacity</h4>
+                    <p class="book-price">&#8358; 2,500</p>
+                    <p class="book-info">Build bold confidence and make a lasting impact with your voice and purpose.</p>
+                    <a href="https://selar.com/l37pr27788" target="_blank" class="purchase-btn">Buy Now</a>
+                </div>
             </div>
             <hr>
             <div class="book-item">
-                <img src="media/finding your path cover photo.jpg" alt="" class="book">
                 <div class="book-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vel beatae animi laudantium assumenda!</p>
+                    <h4 class="book-title">She Money</h4>
+                    <p class="book-price">&#8358; 4,000</p>
+                    <p class="book-info">Learn practical principles for financial growth and lasting freedom.</p>
+                    <a href="https://selar.com/p4e557154p" target="_blank" class="purchase-btn">Buy Now</a>
+                </div>
+                <div class="book-div">
+                    <img src="media/She money.png" alt="" class="book">
                 </div>
             </div>
-
+            <hr>
+            <div class="book-item">
+                <div class="book-div">
+                    <img src="media/In the days of her feminimity.png" alt="" class="book smallest">
+                </div>
+                <div class="book-text">
+                    <h4 class="book-title">In The Days Of Her Femininity</h4>
+                    <p class="book-price">&#8358; 4,000</p>
+                    <p class="book-info">Rediscover your identity and embrace the beauty of authentic femininity.</p>
+                    <a href="https://selar.com/1co11q15lm" target="_blank" class="purchase-btn">Buy Now</a>
+                </div>
+            </div>
         </div>
     </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>Kathryn Esther Clement</h2>
+                <p>
+                    Inspiring purpose through spoken word,
+                    books, and authentic storytelling.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="spoken-word.html">Spoken Word</a>
+                <a href="#books-page">Books</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-social">
+                <h4>Connect</h4>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">
+            © 2026 Kathryn Esther Clement. All Rights Reserved.
+        </p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

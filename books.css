@@ -1,5 +1,6 @@
 body {
     background: #ffffff;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -14,10 +15,6 @@ nav {
     align-items: center;
 }
 
-.bg-color.grey {
-    background-color: #94a3b8;
-}
-
 .book-item {
     display: flex;
     width: 86%;
@@ -30,10 +27,23 @@ nav {
 }
 
 .book {
-    flex: 1;
     max-width: 300px;
     min-width: 250px;
     filter: drop-shadow(2px 2px 5px #222222);
+    transition: all 1s;
+}
+
+.book-div {
+    overflow: hidden;
+}
+
+.book:hover {
+    scale: 1.1;
+}
+
+.book.smallest {
+    filter: none;
+    min-width: 400px;
 }
 
 .book-text {
@@ -41,15 +51,60 @@ nav {
     max-width: 700px;
 }
 
-@media (max-width: 768px){
+.book-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.book-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #118C4F;
+}
+
+.purchase-btn {
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: #2563EB;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 5px;
+    transition: all 0.3s;
+}
+
+.purchase-btn:hover {
+    opacity: 0.85;
+}
+
+.purchase-btn:active {
+    scale: 0.9;
+    opacity: 0.75;
+}
+
+@media (max-width: 786px){
     .book-item {
         width: 90%;
-        gap: 30px;
+        gap: 25px;
+    }
+
+    .book-title, .book-price {
+        font-size: 18px;
     }
 
     .book {
         max-width: 250px;
         min-width: 120px;
+    }
+
+    .book.smallest {
+        min-width: 270px;
+    }
+
+    .purchase-btn{
+        margin-bottom: 10px;
+        padding: 8px 12px;
     }
 }
 
@@ -57,5 +112,9 @@ nav {
     .book {
         max-width: 150px;
         min-width: 100px;
+    }
+
+    .book.smallest {
+        min-width: 120px;
     }
 }

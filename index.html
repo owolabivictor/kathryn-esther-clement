@@ -15,7 +15,7 @@
     <!-- Fonts Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-<body>
+<body id="home-page">
     <div class="overlay"></div>
 
     <video src="media/Kathryn Esther Clement performance.mp4" autoplay muted loop playsinline class="background-video"></video>
@@ -23,12 +23,12 @@
         <div class="nav-bar">
             <h3 class="logo">Kathryn Esther Clement</h3>
             <div class="nav-lists">
-                <i class="fa-solid fa-xmark"></i>
-                <a href="index.html" class="nav-links">Home</a>
-                <a href="about.html" class="nav-links">About</a>
-                <a href="spoken-word.html" class="nav-links">Spoken Word</a>
-                <a href="books.html" class="nav-links">Books</a>
-                <a href="contact.html" class="nav-links">Contact</a>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                <a href="index.html" class="nav-links" onclick="closeMenu()">Home</a>
+                <a href="about.html" class="nav-links" onclick="closeMenu()">About</a>
+                <a href="spoken-word.html" class="nav-links" onclick="closeMenu()">Spoken Word</a>
+                <a href="books.html" class="nav-links" onclick="closeMenu()">Books</a>
+                <a href="contact.html" class="nav-links" onclick="closeMenu()">Contact</a>
             </div>
             <i class="fa-solid fa-bars"></i>
         </div>
@@ -38,7 +38,7 @@
         <div class="hero-container">
             <h1>WORDS THAT AWAKEN PURPOSE</h1>
             <h2>I help people discover identity, purpose and hope through spoken word</h2>
-            <a href="https://whatsapp.com/channel/0029VbBKjmX545umWZ25L70o" class="hero-btn1">Join Community</a>
+            <a href="https://whatsapp.com/channel/0029VbBKjmX545umWZ25L70o" target="_blank" class="hero-btn1">Join Community</a>
             <a href="contact.html">Book Kathryn</a>
         </div>
     </section>
@@ -101,7 +101,7 @@
             <div class="footer-links">
                 <h4>Quick Links</h4>
 
-                <a href="">Home</a>
+                <a href="#home-page">Home</a>
                 <a href="about.html">About</a>
                 <a href="spoken-word.html">Spoken Word</a>
                 <a href="books.html">Books</a>

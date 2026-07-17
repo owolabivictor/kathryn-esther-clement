@@ -26,10 +26,10 @@ hamburger.addEventListener("click", function () {
     overlay.style.display = "block"
 })
 
-closeBtn.addEventListener("click", function (){
+function closeMenu(){
     navLists.classList.remove("show")
     overlay.style.display = "none"
-})
+}
 
 overlay.addEventListener("click", function (){
     navLists.classList.remove("show")
