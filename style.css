@@ -291,7 +291,13 @@ iframe {
     transition: all 1.3s;
 }
 
-.home-page-book.slide-in-left {
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-70px);
+    transition: all 1.3s;
+}
+
+.reveal-left.show {
     opacity: 1;
     transform: translateX(0);
 }
@@ -405,7 +411,7 @@ footer hr{
         color: white;
         padding: 15px;
         display: none;
-        gap: 10px;
+        gap: 0;
     }
     
     .nav-lists.show {
@@ -416,6 +422,11 @@ footer hr{
         color: white;
         border-bottom: 1px solid white;
         text-decoration: none;
+        padding: 15px 0;
+    }
+
+    .nav-lists.show .nav-links:hover {
+        color: #2563EB;
     }
 }
 
