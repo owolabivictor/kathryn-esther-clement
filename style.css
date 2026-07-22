@@ -447,7 +447,7 @@ footer hr{
         padding: 15px 0;
     }
 
-    .nav-lists.show .nav-links {
+    .nav-lists.show .nav-links, .fa-solid.fa-xmark {
         padding-left: 8px;
         transition: all 0.3s;
     }
