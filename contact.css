@@ -8,6 +8,10 @@ body {
     background:#e7e8e9;
 }
 
+.overlay {
+    z-index: 1;
+}
+
 .contact {
     display:flex;
     justify-content:center;
