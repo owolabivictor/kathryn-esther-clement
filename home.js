@@ -5,7 +5,7 @@ function setHeroHeight(){
 
     const calculatedHeight = window.innerHeight - navHeight
 
-    const minHeight = 500
+    const minHeight = 600
     const maxHeight = 900
 
     hero.style.height = `${Math.min(Math.max(calculatedHeight, minHeight), maxHeight)}px`
