@@ -474,6 +474,14 @@ footer hr{
     .footer-links a{
         font-size: 16px;
     }
+
+    footer hr {
+        margin-top: 20px;
+    }
+
+    .copyright {
+        padding: 0 15px;
+    }
 }
 
 @media (max-width: 486px){
