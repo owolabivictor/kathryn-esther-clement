@@ -174,7 +174,8 @@ nav.sticky .logo, nav.sticky .nav-links, nav.sticky .fa-bars{
 }
 
 .hero a:hover {
-    scale: 1.05;
+    background:#1d4ed8;
+    transform: translateY(-4px);
 }
 
 .hero a:active {
@@ -295,17 +296,6 @@ iframe {
     transition: all 1.3s;
 }
 
-.reveal-left {
-    opacity: 0;
-    transform: translateX(-70px);
-    transition: all 1.3s;
-}
-
-.reveal-left.show {
-    opacity: 1;
-    transform: translateX(0);
-}
-
 .featured-book-text {
     flex: 1;
     max-width: 600px;
@@ -361,6 +351,11 @@ footer{
     color: #2563EB;
 }
 
+.footer-social-container {
+    display: flex;
+    gap: 15px;
+}
+
 .footer-social a{
     color: white;
     text-decoration: none;
@@ -371,7 +366,7 @@ footer{
 
 .footer-social a:hover{
     color: #2563EB;
-    transform: translateX(4px);
+    transform: translateY(-2px);
 }
 
 footer hr{
@@ -536,4 +531,26 @@ footer hr{
 .reveal.show {
     transform: translateY(0);
     opacity: 1;
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-70px);
+    transition: all 1.3s;
+}
+
+.reveal-left.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(70px);
+    transition: all 1.3s;
+}
+
+.reveal-right.show {
+    opacity: 1;
+    transform: translateX(0);
 }
