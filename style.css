@@ -194,7 +194,7 @@ nav.sticky .logo, nav.sticky .nav-links, nav.sticky .fa-bars{
 .featured-video-container {
     width: 86%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
 }
 
@@ -249,8 +249,9 @@ iframe {
 
 .image-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     align-items: center;
+    justify-content: center;
     width: 80%;
     max-width: 900px;
 }
@@ -284,7 +285,7 @@ iframe {
 
 .home-page-book {
     max-width: 300px;
-    min-width: 250px;
+    min-width: 200px;
     filter: drop-shadow(5px 5px 10px #222222);
     opacity: 0;
     transform: translateX(-70px);
@@ -456,6 +457,10 @@ footer hr{
     .featured-book-container {
         flex-direction: column-reverse;
         width: 90%;
+    }
+
+    .home-page-book {
+        max-width: 270px;
     }
 
     .featured-book-text {
