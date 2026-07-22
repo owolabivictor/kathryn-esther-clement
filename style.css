@@ -446,11 +446,6 @@ footer hr{
         font-size: clamp(16px, 5vw, 24px);
     }
 
-    /* About Section */
-    .about-paragraph {
-        line-height: 35px;
-    }
-
     /* Featured book section*/
     .featured-book-container {
         flex-direction: column-reverse;
